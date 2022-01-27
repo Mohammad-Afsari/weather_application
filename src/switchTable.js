@@ -1,3 +1,5 @@
+import "@babel/polyfill";
+
 // Get Elements
 const switchDegrees = document.querySelector('.round')
 
