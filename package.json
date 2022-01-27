@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Mohammad-Afsari/weather_application#readme",
   "devDependencies": {
     "@babel/core": "^7.16.12",
+    "@babel/plugin-transform-runtime": "^7.16.10",
     "@babel/preset-env": "^7.16.11",
     "babel-loader": "^8.2.3",
     "webpack": "^5.67.0",
@@ -30,6 +31,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "core-js": "^3.20.3",
     "regenerator-runtime": "^0.13.9"
   }
 }
