@@ -4,6 +4,9 @@
 import { max } from "lodash"
 import { test } from "media-typer"
 
+import "@babel/polyfill";
+import 'regenerator-runtime/runtime'
+
 // Elements
 const searchLocation = document.getElementById('searchLocation')
 
