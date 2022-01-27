@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/weatherIcon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div class="background1" id="content">
+        <div class="errorMessage">
+            Error! Please enter a valid city or country.
+        </div>
+        <a href="./index.html">
+            <i class="fas fa-cloud-sun-rain" id="weatherIcon"></i>
+        </a>
+        <div class="loader" id="loader"></div>
+        <!-- Search bar -->
+        <div class="wrapper">
+            <img class="search-icon" src="./img/search.svg" />
+            <input placeholder="Search" type="text" class="search" id="searchLocation">
+        </div>
+        <label class="switch" id="tempBtn">
+            <p id="celcius">°C</p>
+            <input type="checkbox">
+            <span class="slider round"></span>
+            <p id="faren">°F</p>
+        </label>
+
+        <!-- Weather Now -->
+        <div class="container weatherNow">
+            <h2 id="location">London</h2>
+            <div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="column left">
+                    <img src="http://openweathermap.org/img/wn/04n@2x.png" alt="" id="icon1">
+                    <div id="tempNow">
+                        <span id="tNow"></span>
+                        <span id="cf">°</span>
+                        <span id="c"> C</span>
+                    </div>
+                    <div id="description">Scatered clouds</div>
+                </div>
+                <div class="column right">
+                    <div id="population"></div>
+                    <div id="sunrise"></div>
+                    <div id="sunset"></div>
+                    <div id="feelsLike"></div>
+                    <div id="minTemp"></div>
+                    <div id="maxTemp"></div>
+                    <div id="humidity"></div>
+                    <div id="windSpeed"></div>
+                </div>
+            </div>
+        </div>
+
+        <hr id="divider">
+
+        <!-- Table for 5 day forecast -->
+        <div class="detailedTable">
+            <table class="dataTable">
+                <tr class="tableHeadingsParent">
+                  <th>Date</th>
+                  <th>Icon</th>
+                  <th>Humidity</th>
+                  <th>Min. Temp</th>
+                  <th>Max. Temp</th>
+                </tr>
+                <tr class="tableResultsParent">
+                  <td></td>
+                  <td><img src="http://openweathermap.org/img/wn/04n@2x.png" alt="" id="icon"></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+        </div>
+    </div>
+
+    <hr id="divider">
+
+    <footer class="footerCode">
+        <a href="https://github.com/Mohammad-Afsari/weather_app">
+            <i class="fas fa-code" id="code"></i>
+        </a>
+    </footer>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
