@@ -1,5 +1,6 @@
 import {fetchWeather, allWeather } from './search'
 import { switchTemperature } from './switchTable'
+import "@babel/polyfill";
 
 // Add loading wheel on window load / refresh
 window.addEventListener('DOMContentLoaded', (e) => {
