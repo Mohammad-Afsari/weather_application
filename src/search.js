@@ -41,7 +41,7 @@ class fetchWeather {
         try {
             const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${this.location}&appid=${this.apiKey}`)
             const weatherData = await response.json();
-
+            
             return weatherData;
         } catch(error) {
             console.log(error)
